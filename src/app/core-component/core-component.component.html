@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="core-component.component.css" />
+    <!-- <link rel="stylesheet" href="core-component.mediaqueries.css" /> -->
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Syed Raafay Mohiuddin</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#publication">Publication</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Syed Raafay Mohiuddin</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#publication" onclick="toggleMenu()">Publication</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/raafay-pic.jpg" alt="Raafay profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Syed Raafay Mohiuddin</h1>
+        <p class="section__text__p2">Software Development Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Syed_Raafay_Mohiuddin_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/syed-raafay-mohiuddin-40a7441b4/')"
+            
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/SYED-RAAFAY')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-container">
+        <p class="section__text__p3">Get To Know More</p>
+        <h1 class="titleleft">About Me</h1>
+        <div class="text-container">
+          <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+          </p>
+        </div>
+      </div>
+      <div class="section__pic-container2">
+        <img
+          src="./assets/about-pic.jpeg"
+          alt="Profile picture"
+          class="about-pic"
+        />
+      </div>
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Work Experience</h1>
+  <div class="timeline">
+    <div class="container left">
+      <div class="content">
+        <img src="./assets/parc_logo.jpg" alt="Company 1 Logo" class="company-logo">
+        <h3>Web development & Spatial Mapping (Intern)</h3>
+        <p>◦ Enhanced accessibility to satellite imagery by incorporating essential landmarks like schools and hospitals, improving user
+            navigation and decision-making.</p>
+        <p>◦ Technologies : - Java, SpringBoot, HTML, CSS, JavaScript, GIS and Python</p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <img src="./assets/amazon_logo.jpg" alt="Company 2 Logo" class="company-logo">
+        <h3>Software Development Engineering (Intern)</h3>
+        <p>◦ Optimized Kinesis data streams with dynamic partitioning, significantly reducing Athena querying costs and
+            enhancing data delivery efficiency.</p>
+        <p>◦ Engineered a caching mechanism to streamline data reuse across multiple hosts, driving down AWS S3 expenses
+            by $40 per day.</p>
+        <p>◦ Revamped the manual mapping tool by integrating S3 data, achieving a 200% increase in pop-up alert triggers for the
+            mapper at Amazon.</p>
+        <p>◦ Technologies : - Java, SpringBoot, Typescript, SQL and AWS tools</p>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <img src="./assets/kanerika_logo.jpg" alt="Company 3 Logo" class="company-logo">
+        <h3>Software Engineering Intern (GenAI)</h3>
+        <p>◦ Spearheaded the Development of a Holistic Product Analysis Platform Integrating Generative AI for E-Commerce</p>
+        <p>◦ Technologies: - Python, Flask, Pinecone, Angular, MongoDB, OpenAI, and Gemini</p>
+      </div>
+    </div>
+    <!-- Add more experiences as needed -->
+  </div>
+    </section>
+    <section></section>
+    <section id="projects">
+      <p class="section__text__p1">Checkout My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="about-containers">
+            <div class="details-container">
+              <h3>Client-Server Application Framework</h3>
+              <h5>Operating Systems</h5>
+              <p>Designed a POSIX-compliant C client-server app</p>
+            </div>
+            <div class="details-container">
+              <h3>Customer Churn Prediction</h3>
+              <h5>Machine Learning</h5>
+              <p>Designed model can predict churn rate with an 80% accuracy
+            </div>
+            <div class="details-container">
+              <h3>Grocery Store Website</h3>
+              <h5> Web-Development </h5>
+              <p>Developed an E-commerce Website for grocery shopping</p>
+              </div>
+              <div class="details-container">
+                <h3>AI - Chatbot</h3>
+              <h5>Artificial Intelligence</h5>
+              <p>Built a which assistance the of students with campus information.</p>
+            </div>
+          </div>
+    </section>
+    <section id="publication">
+      <p class="section__text__p1">Checkout My</p>
+      <h1 class="title">Publication</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="article-container">
+              <h3>A Novel Technique to Parameterize Congestion Control in 6TiSCH IIoT Networks</h3>
+              <h5>IEEE Globecom Conference 2023</h5>
+              <p>Developing a novel RPL routing protocol that decreases congestion and provides an effective congestion control mechanism in 6TiSCH Network</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>SASS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>TypeScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Material UI</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:syedraafay1@gmail.com">syedraafay1@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/syed-raafay-mohiuddin-40a7441b4/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publication">Publication</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <div id="chat-button" (click)="toggleChat()">
+      <img src="./assets/chatbot.png" alt="Chat Icon">
+    </div>
+    <!-- <div id="chat-window" class="hidden">
+      <div id="chat-header">
+        <span>Chat with us!</span>
+        <button id="close-chat">&times;</button>
+      </div>
+      <div id="chat-content">
+        <div id="chat-messages"></div>
+        <input type="text" id="chat-input" placeholder="Type a message...">
+        <button id="send-message">Send</button>
+      </div>
+    </div> -->
+    <div *ngIf="chatBotActive === true" class="chat-container" >
+      <div class="scroll-wrapper">
+        <div class="message-container">
+          <div *ngFor="let message of messages" class="message" [ngClass]="{ 'client-message': message.from === 'client', 'server-message': message.from === 'server' }">
+            {{ message.text }}
+          </div>
+        </div>
+      </div>
+      <div class="query-box">
+        <input *ngIf="showChat" type="text" placeholder="Type your query..." [(ngModel)]="userMessage" (keydown)="onEnterPressed($event)">
+    
+      </div>
+      <div class ="chat-top-bar">
+        <h3 class="chat_history" >Chat History</h3>
+        <button class="close-btn" (click)="closeChat()">
+          <img src="./assets/closebutton.png" alt="Chat Icon"></button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

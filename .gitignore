@@ -40,3 +40,23 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Ignore compiled files
+*.class
+*.o
+*.pyc
+
+# Ignore build output
+build/
+dist/
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+
+# Ignore logs
+*.log
+
+# Ignore dependencies
+node_modules/
+.angular/
