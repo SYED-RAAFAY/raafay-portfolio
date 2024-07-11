@@ -452,7 +452,7 @@ article .icon {
 
 /* PROJECTS SECTION */
 
-#projects {
+/* #projects {
   position: relative;
 }
 
@@ -475,7 +475,65 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+} */
+
+#projects {
+  position: relative;
 }
+
+.about-containers {
+  display: grid;
+  gap: 1rem;
+}
+
+.details-container {
+  border: 1px solid rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  cursor: pointer;
+}
+
+.details-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  border-color: black; /* Changes border color to black on hover */
+}
+
+.section__text__p1, .title {
+  text-align: center;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* Specific layout rules */
+.about-containers.one-item {
+  justify-items: center; /* Center the single item */
+}
+
+.about-containers.two-items {
+  grid-template-columns: repeat(2, 1fr); /* Two items in one row */
+}
+
+.about-containers.three-items {
+  grid-template-columns: repeat(2, 1fr); /* Two items in the first row */
+}
+
+.about-containers.three-items .details-container:nth-child(3) {
+  grid-column: span 2; /* Center the third item */
+  justify-self: center;
+}
+
 
 /* CONTACT */
 
